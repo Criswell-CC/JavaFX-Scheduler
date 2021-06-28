@@ -1,0 +1,11 @@
+#login-label {
+
+    -fx-font-size: 17px;
+
+}
+
+#error-label {
+
+    -fx-text-fill: red;
+
+}

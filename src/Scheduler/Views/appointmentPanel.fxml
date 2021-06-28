@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Scheduler.Controllers.AppointmentPanelController"
+      fx:id="appointmentPanel"
+      stylesheets="@panel.css"
+      spacing="20.0"
+        >
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup" />
+    </fx:define>
+
+    <children>
+        <Label id="table-label" text="Appointments"/>
+        <HBox>
+            <RadioButton fx:id="allRadioButton" mnemonicParsing="false" text="All" toggleGroup="$toggleGroup">
+                <HBox.margin>
+                    <Insets right="20.0"/>
+                </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="monthlyRadioButton" mnemonicParsing="false" text="Monthly" toggleGroup="$toggleGroup">
+                <HBox.margin>
+                    <Insets right="20.0"/>
+                </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="weeklyRadioButton" mnemonicParsing="false" text="Weekly" toggleGroup="$toggleGroup"/>
+        </HBox>
+        <TableView fx:id="appointmentTableView">
+            <columns>
+                <TableColumn fx:id="appointmentIDColumn" text="ID"/>
+                <TableColumn fx:id="titleColumn" text="Title"/>
+                <TableColumn fx:id="descriptionColumn" text="Description"/>
+                <TableColumn fx:id="locationColumn" text="Location"/>
+                <TableColumn fx:id="contactColumn" text="Contact"/>
+                <TableColumn fx:id="typeColumn" text="Type"/>
+                <TableColumn fx:id="startDateColumn" text="Start Date"/>
+                <TableColumn fx:id="startTimeColumn" text="Start Time"/>
+                <TableColumn fx:id="endDateColumn" text="End Date"/>
+                <TableColumn fx:id="endTimeColumn" text="End Time"/>
+                <TableColumn fx:id="customerIDColumn" text="Customer ID"/>
+            </columns>
+        </TableView>
+        <ButtonBar>
+            <buttons>
+                <Button text="Add appointment" onAction="#onAddAppointment"/>
+                <Button text="Update appointment" onAction="#onUpdateAppointment"/>
+                <Button text="Delete appointment" onAction="#onDeleteAppointment"/>
+            </buttons>
+        </ButtonBar>
+    </children>
+</VBox>
+

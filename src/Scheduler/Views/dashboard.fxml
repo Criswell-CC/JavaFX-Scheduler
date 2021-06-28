@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Scheduler.Controllers.DashboardController"
+      prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu text="Reports">
+                    <items>
+                        <MenuItem text="Monthly Customer Appointments by Type" onAction="#onMonthlyCustomerAppointmentsByType"/>
+                        <MenuItem text="Schedules for All Contacts" onAction="#onSchedulesForAllContacts"/>
+                        <MenuItem text="Appointments by User Created" onAction="#onAppointmentsByUserCreated"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <BorderPane>
+            <center>
+                <VBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <fx:include fx:id="customerPanel" source="customerPanel.fxml"/>
+                                <fx:include fx:id="appointmentPanel" source="appointmentPanel.fxml"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </center>
+            <left>
+                <VBox>
+                    <BorderPane.margin>
+                        <Insets left="80.0"/>
+                    </BorderPane.margin>
+                </VBox>
+            </left>
+            <right>
+                <VBox>
+                    <BorderPane.margin>
+                        <Insets right="80.0"/>
+                    </BorderPane.margin>
+                </VBox>
+            </right>
+            <top>
+                <VBox>
+                    <BorderPane.margin>
+                        <Insets top="15.0"/>
+                    </BorderPane.margin>
+                </VBox>
+            </top>
+            <bottom>
+                <VBox>
+                    <BorderPane.margin>
+                        <Insets bottom="15.0"/>
+                    </BorderPane.margin>
+                </VBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</VBox>

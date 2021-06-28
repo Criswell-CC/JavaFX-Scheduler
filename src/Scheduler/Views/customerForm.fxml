@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          hgap="10.0" vgap="10"
+          stylesheets="@customerForm.css"
+    >
+
+    <padding>
+        <Insets top="30" right="25" left="25"/>
+    </padding>
+
+    <Label fx:id="mainLabel" id="main-label" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"
+           alignment="CENTER">
+        <padding>
+            <Insets bottom="20.0" left="50.0"/>
+        </padding>
+    </Label>
+
+    <Label text="ID" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Address" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Postal Code" GridPane.columnIndex="0" GridPane.rowIndex="4" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Division" GridPane.columnIndex="0" GridPane.rowIndex="5" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Country" GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Phone" GridPane.columnIndex="0" GridPane.rowIndex="7" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <TextField fx:id="enteredID" GridPane.columnIndex="1" GridPane.rowIndex="1" disable="true" promptText="Auto Gen-Disabled"
+               maxWidth="130.0"/>
+    <TextField fx:id="enteredName" GridPane.columnIndex="1" GridPane.rowIndex="2" maxWidth="130.0"/>
+    <TextField fx:id="enteredAddress" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="130.0"/>
+    <TextField fx:id="enteredPostalCode" GridPane.columnIndex="1" GridPane.rowIndex="4" maxWidth="130.0"/>
+    <TextField fx:id="enteredPhone" GridPane.columnIndex="1" GridPane.rowIndex="7" maxWidth="130.0" />
+
+    <ComboBox fx:id="divisionComboBox" GridPane.columnIndex="1" GridPane.rowIndex="5" prefWidth="130.0"/>
+    <ComboBox fx:id="countryComboBox" GridPane.columnIndex="1" GridPane.rowIndex="6" prefWidth="130.0"/>
+
+    <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.columnSpan="3">
+        <buttons>
+            <Button fx:id="saveButton"  mnemonicParsing="false" text="Save" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+        </buttons>
+    </ButtonBar>
+
+</GridPane>

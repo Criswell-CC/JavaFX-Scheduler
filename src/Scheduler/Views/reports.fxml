@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@reports.css"
+      spacing="20.0"
+>
+    <children>
+        <Label fx:id="mainLabel" id="main-label">
+            <padding>
+                <Insets left="155.0" top="10.0"/>
+            </padding>
+        </Label>
+        <HBox fx:id="tableContainer"/>
+    </children>
+    <padding>
+        <Insets bottom="25.0"/>
+    </padding>
+</VBox>

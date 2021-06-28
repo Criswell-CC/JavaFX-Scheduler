@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          hgap="10.0" vgap="10"
+          stylesheets="@appointmentForm.css"
+>
+
+    <padding>
+        <Insets top="30" right="25" left="25"/>
+    </padding>
+
+    <Label fx:id="mainLabel" id="main-label" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"
+           alignment="CENTER">
+        <padding>
+            <Insets bottom="10.0" left="20.0"/>
+        </padding>
+    </Label>
+
+    <Label text="ID" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Title" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Description" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Location" GridPane.columnIndex="0" GridPane.rowIndex="4" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Type" GridPane.columnIndex="0" GridPane.rowIndex="5" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <Label text="Start Date and Time" GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER" maxWidth="120.0"/>
+
+    <Label text="End Date and Time" GridPane.columnIndex="0" GridPane.rowIndex="7" alignment="CENTER" maxWidth="120.0"/>
+
+    <Label text="Customer ID" GridPane.columnIndex="0" GridPane.rowIndex="8" alignment="CENTER" maxWidth="120.0"/>
+
+    <Label text="User ID" GridPane.columnIndex="0" GridPane.rowIndex="9" alignment="CENTER" maxWidth="120.0"/>
+
+    <Label text="Contact" GridPane.columnIndex="0" GridPane.rowIndex="10" alignment="CENTER" maxWidth="80.0">
+        <padding>
+            <Insets left="12.0"/>
+        </padding>
+    </Label>
+
+    <TextField fx:id="enteredID" GridPane.columnIndex="1" GridPane.rowIndex="1" disable="true" promptText="Auto Gen-Disabled"
+               maxWidth="130.0"/>
+    <TextField fx:id="enteredTitle" GridPane.columnIndex="1" GridPane.rowIndex="2" maxWidth="130.0"/>
+    <TextField fx:id="enteredDescription" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="130.0"/>
+    <TextField fx:id="enteredLocation" GridPane.columnIndex="1" GridPane.rowIndex="4" maxWidth="130.0"/>
+    <TextField fx:id="enteredType" GridPane.columnIndex="1" GridPane.rowIndex="5" maxWidth="130.0" />
+    <TextField fx:id="enteredStartDate" GridPane.columnIndex="1" GridPane.rowIndex="6" maxWidth="110.0">
+        <GridPane.margin>
+            <Insets left="20.0"/>
+        </GridPane.margin>
+    </TextField>
+    <TextField fx:id="enteredStartTime" GridPane.columnIndex="2" GridPane.rowIndex="6" maxWidth="110.0" />
+    <TextField fx:id="enteredEndDate" GridPane.columnIndex="1" GridPane.rowIndex="7" maxWidth="110.0">
+        <GridPane.margin>
+            <Insets left="20.0"/>
+        </GridPane.margin>
+    </TextField>
+    <TextField fx:id="enteredEndTime" GridPane.columnIndex="2" GridPane.rowIndex="7" maxWidth="110.0" />
+    <TextField fx:id="enteredCustomerID" GridPane.columnIndex="1" GridPane.rowIndex="8" maxWidth="110.0" />
+    <TextField fx:id="enteredUserID" GridPane.columnIndex="1" GridPane.rowIndex="9" maxWidth="110.0" />
+
+    <ComboBox fx:id="contactComboBox" GridPane.columnIndex="1" GridPane.rowIndex="10" prefWidth="130.0"/>
+
+    <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="11" GridPane.columnSpan="3">
+        <buttons>
+            <Button fx:id="saveButton"  mnemonicParsing="false" text="Save" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+        </buttons>
+    </ButtonBar>
+</GridPane>

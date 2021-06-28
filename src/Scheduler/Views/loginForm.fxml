@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:id="mainGrid"
+          fx:controller="Scheduler.Controllers.LoginFormController"
+
+          stylesheets="@loginForm.css"
+            >
+    <left>
+        <VBox>
+            <BorderPane.margin>
+                <Insets left="80.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <right>
+        <VBox>
+            <BorderPane.margin>
+                <Insets right="80.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </right>
+    <top>
+        <VBox>
+            <BorderPane.margin>
+                <Insets top="60.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="12.0">
+            <Label id="login-label" fx:id="loginLabel"/>
+            <TextField fx:id="usernameText" promptText="Username"/>
+            <PasswordField fx:id="passwordText" promptText="Password"/>
+            <ButtonBar>
+                <buttons>
+                    <Button fx:id="loginButton" ButtonBar.buttonData="LEFT"/>
+                    <Button fx:id="exitButton" ButtonBar.buttonData="RIGHT"/>
+                </buttons>
+            </ButtonBar>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="15.0"/>
+            </BorderPane.margin>
+            <Label text=""/>
+            <Label fx:id="timezoneLabel">
+                <VBox.margin>
+                    <Insets bottom="45.0"/>
+                </VBox.margin>
+            </Label>
+            <Label id="error-label" fx:id="errorLabel">
+                <VBox.margin>
+                    <Insets bottom="30.0"/>
+                </VBox.margin>
+            </Label>
+        </VBox>
+    </bottom>
+</BorderPane>

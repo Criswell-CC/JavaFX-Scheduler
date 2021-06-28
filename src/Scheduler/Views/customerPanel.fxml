@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Scheduler.Controllers.CustomerPanelController"
+            stylesheets="@panel.css"
+            spacing="20.0"
+        >
+    <children>
+        <Label id="table-label" text="Customers"/>
+        <TableView fx:id="customerTableView">
+            <columns>
+                <TableColumn fx:id="customerIDColumn" text="ID" prefWidth="30.0"/>
+                <TableColumn fx:id="customerNameColumn" text="Name"/>
+                <TableColumn fx:id="addressColumn" text="Address" prefWidth="120.0"/>
+                <TableColumn fx:id="postalCodeColumn" text="Postal Code"/>
+                <TableColumn fx:id="divisionNameColumn" text="Division"/>
+                <TableColumn fx:id="countryNameColumn" text="Country"/>
+                <TableColumn fx:id="phoneColumn" text="Phone Number" prefWidth="170.0"/>
+            </columns>
+        </TableView>
+        <ButtonBar>
+            <buttons>
+                <Button text="Add customer" onAction="#onAddCustomer"/>
+                <Button text="Update customer" onAction="#onUpdateCustomer"/>
+                <Button text="Delete customer" onAction="#onDeleteCustomer"/>
+            </buttons>
+        </ButtonBar>
+    </children>
+</VBox>
