@@ -1,4 +1,4 @@
-The Scheduler is a desktop application that provides international companies with the ability to manage appointments and customers through a user interface coded in JavaFX. It provides all the necessary timezone management for an international company and interacts with the company's MySQL database to display, add, update, delete, and report on data.
+This is a desktop application that provides international companies with the ability to manage appointments and customers through a user interface coded in JavaFX. It provides all the necessary timezone management for an international company and interacts with the company's MySQL database to display, add, update, delete, and report on data.
 
 The IDE used to code this project was IntelliJ Community 2020.03. JDK 11.0.9 and JavaFX SDK version 11.0.9 were used.
 
