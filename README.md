@@ -8,5 +8,3 @@ To run this program:
 	--Configure VM options through Run -> Edit Configuration and making sure the VM options include the path to JavaFX on your machine.
 	--Run the project by pressing Shift+F10 or hitting the green play button in the top right corner.
 	--Use other 'admin' 'admin' or 'test' 'test' for the username and password to log in to the application.
-
-The additional report I chose to run is a report listing all appointments and ordering them by the user id of the user who created them.
